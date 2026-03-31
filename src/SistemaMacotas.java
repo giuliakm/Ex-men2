@@ -34,4 +34,16 @@ public class SistemaMacotas {
         System.out.println("Mascota registrada correctamente");
     }
 
+    public void MostarMascotas () {
+        if (lista.isEmpty()) {
+            System.out.println("Lista Vacía");
+            return;
+        }
+
+        for (Mascota m : lista){
+            m.Imprimir();
+            System.out.println("Sonido: " + m.Sonido());
+            System.out.println("==========================");
+        }
+    }
 }
