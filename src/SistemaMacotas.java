@@ -46,4 +46,14 @@ public class SistemaMacotas {
             System.out.println("==========================");
         }
     }
+
+    public void EjecutarSonido (int id){
+        for (Mascota m : lista) {
+            if (m.getId() == id) {
+                System.out.println(m.Sonido());
+                return;
+            }
+        }
+        System.out.println("Mascota no encontrada");
+    }
 }
